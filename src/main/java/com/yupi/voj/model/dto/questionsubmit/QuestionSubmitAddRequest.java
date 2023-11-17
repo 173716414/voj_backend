@@ -1,4 +1,4 @@
-package com.yupi.voj.model.dto.question;
+package com.yupi.voj.model.dto.questionsubmit;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -16,37 +16,22 @@ import java.util.List;
  * @from <a href="https://yupi.icu">编程导航知识星球</a>
  */
 @Data
-public class QuestionAddRequest implements Serializable {
+public class QuestionSubmitAddRequest implements Serializable {
 
     /**
-     * 标题
+     * 编程语言
      */
-    private String title;
+    private String language;
 
     /**
-     * 内容
+     * 用户代码
      */
-    private String content;
+    private String code;
 
     /**
-     * 标签列表（json 数组）
+     * 题目 id
      */
-    private List<String> tags;
-
-    /**
-     * 题目答案
-     */
-    private String answer;
-
-    /**
-     * 判题用例（json 数组）
-     */
-    private List<JudgeCase> judgeCase;
-
-    /**
-     * 判题配置（json 对象）
-     */
-    private JudgeConfig judgeConfig;
+    private Long questionId;
 
     private static final long serialVersionUID = 1L;
 }
