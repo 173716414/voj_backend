@@ -34,12 +34,12 @@ public class QuestionQueryRequest extends PageRequest implements Serializable {
     /**
      * 内容
      */
-    private List<String> content;
+    private String content;
 
     /**
      * 标签列表（json 数组）
      */
-    private String tags;
+    private List<String> tags;
 
     /**
      * 题目答案
