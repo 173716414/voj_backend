@@ -29,6 +29,11 @@ public class QuestionUpdateRequest implements Serializable {
     private String title;
 
     /**
+     * 题目答案
+     */
+    private String answer;
+
+    /**
      * 内容
      */
     private String content;
